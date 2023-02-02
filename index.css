@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.main{
+    background-image: url(./img/car-background.jpg);
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    gap: 15%;
+}
+
+.header-menu{
+    width: 70%;
+    padding: 2rem 7rem;
+}
+
+.header-menu a.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo-color{
+    color: rgb(149, 149, 255);
+}
+
+.menu-options{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 25px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.menu-options:hover{
+    color: rgb(149, 149, 255);
+}
+
+.ativo{
+    color :rgb(149, 149, 255)
+}
+
+
+
+.header-right{
+    float: right;
+}
+
+@media screen and (max-width: 870px) {
+    .header-menu a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+
+.middle-content{
+    color: white;
+    text-align: center;
+}
+
+.container-form-info{
+    display: flex;
+    height: 400px;
+
+}
+
+.form-container{
+    background-color: rgb(102, 102, 255);
+    gap: 2%;
+    border-radius: 7px;
+    padding: 2rem;
+    height: 100%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.form-container input{
+    background-color: rgb(177, 177, 255);;
+}
+
+.form-container h2{
+    color: white;
+}
+
+.label{
+    color: white;
+}
+
+input::placeholder{
+    color: rgb(80, 80, 80);
+}
+
+.container-dates{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.date-left{
+    width: 50%;
+}
+.date-right{
+    width: 50%;
+    text-align: end;
+}
+
+.btn-alugar{
+    background-color: rgb(15, 179, 15);
+    font-size: 1rem;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.form-right{
+    margin-top: 20px;
+    border-top-right-radius: 5px;
+    background-color: white;
+    height: 100%;
+}
+
+.form-right h2{
+    padding: 1rem;
+    color: rgb(104, 102, 102);
+    text-align: center;
+}
