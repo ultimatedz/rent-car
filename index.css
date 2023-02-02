@@ -2,7 +2,9 @@
 *{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    
 }
+
 
 
 .main{
@@ -65,6 +67,19 @@
     }
   }
 
+  @media screen and (max-width: 1250px) {
+    .container-dates{
+        flex-direction: column;
+    }
+
+    .date-left{
+        width: 100%;
+    }
+    .date-right{
+        width: 100%;
+    }
+  }
+
 
 .middle-content{
     color: white;
@@ -73,12 +88,12 @@
 
 .container-form-info{
     display: flex;
-    height: 400px;
+    height: 600px;
 
 }
 
 .form-container{
-    background-color: rgb(102, 102, 255);
+    background-color: rgb(116, 116, 255);
     gap: 2%;
     border-radius: 7px;
     padding: 2rem;
@@ -90,8 +105,15 @@
 }
 
 .form-container input{
-    background-color: rgb(177, 177, 255);;
+    margin-bottom: 5px;
+    background-color: rgb(116, 116, 255);
+    padding: 10px;
+    border-style: solid;
+    border-color: rgb(129, 129, 247);
+    outline: none;
 }
+
+
 
 .form-container h2{
     color: white;
@@ -110,13 +132,12 @@ input::placeholder{
     width: 100%;
     justify-content: space-between;
 }
-.date-left{
-    width: 50%;
-}
-.date-right{
-    width: 50%;
-    text-align: end;
-}
+
+
+
+
+
+
 
 .btn-alugar{
     background-color: rgb(15, 179, 15);
