@@ -186,3 +186,16 @@ body{
 .alugar_btn:hover{
     background-color: rgb(177, 177, 255);
 }
+
+.categorySelect{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.filter-button{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+
