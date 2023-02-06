@@ -66,7 +66,8 @@ function updateList(res){
                         <br>
                         <span>Ano: ${element.ano}</span>
                         <br>
-                        <span>Estado: ${element.obs}</span>
+
+                        <span>Status: ${element.status}</span>
                         <br>
 
                         <span>Diaria: R$${element.price}</span>
@@ -83,14 +84,8 @@ function updateList(res){
                        </button>       
                             
                     </div>
-
-                    <div class="button_alugar">
-                      <span class="alugar_btn">Reserve Agora</span>
-                    </div>
       `
-      
-      
-      
+           
   })}else{
 
   document.querySelector("#cars_container").innerHTML = ''
@@ -127,10 +122,6 @@ function updateList(res){
                        </button>       
                             
                     </div>
-
-                    <div class="button_alugar">
-                      <span class="alugar_btn">Reserve Agora</span>
-                    </div>
       `
   })
   }
@@ -145,6 +136,7 @@ function deleteCar(id) {
     updateList(res)
   }))
 }
+
 
 
 
@@ -191,6 +183,10 @@ function callUpdateCar(){
 
 function saveLocalStorageId(id){
   localStorage.setItem("idEdit", id);
+}
+
+function rent_a_car(id){
+
 }
 
 

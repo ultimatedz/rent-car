@@ -75,6 +75,10 @@
     .header-menu{
         background-color: rgba(255, 255, 255, 0.5);
     }
+
+    .label{
+        font-size: 6px;
+    }
   }
 
   @media screen and (max-width: 1250px) {
@@ -88,6 +92,8 @@
     .date-right{
         width: 100%;
     }
+    
+
   }
 
 

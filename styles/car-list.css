@@ -7,9 +7,7 @@
 
 }
 
-body{
-    background-color: rgb(149, 149, 255);
-}
+
 .main{
     width: 100%;
     height: 100%;
@@ -44,7 +42,7 @@ body{
     width: 300px;
     margin-top: 1rem;
     text-align: center;
-    height: 470px;
+    height: 450px;
     background-color: rgba(255, 255, 255, 0.7);
     transition: all 1s;
     box-shadow: 1px 1px 25px black;
@@ -105,8 +103,7 @@ body{
     padding: 2rem 7rem;
     height: 50px;
     padding-bottom: 1rem;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    background-color: rgba(47, 0, 255, 0.4);
 }
 
 .header-menu a.logo{
@@ -159,12 +156,13 @@ body{
         opacity: 0;
     }
 
+
   }
 
 
 .category_title{
     padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .span_placeholder{
@@ -190,12 +188,19 @@ body{
 .categorySelect{
     padding: 5px;
     border-radius: 5px;
-    border-style: none;
+}
+.categorySelect:focus{
+    outline: none;
 }
 
 .filter-button{
     padding: 5px;
     border-radius: 5px;
     border-style: none;
+    transition: all 1s;
+}
+
+.filter-button:hover{
+    background-color: rgb(205, 205, 255);
 }
 
