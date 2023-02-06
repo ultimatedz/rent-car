@@ -40,6 +40,7 @@
 
 .car-content{
     width: 300px;
+    border-radius: 8px;
     margin-top: 1rem;
     text-align: center;
     height: 450px;
@@ -128,11 +129,11 @@
 }
 
 .menu-options:hover{
-    color: rgb(0, 0, 255);
+    color: white;
 }
 
 .ativo{
-    color :rgb(0, 0, 255)
+    color :white;
 }
 
 
