@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carbook - Rent a car</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <div class="main">
         <div class="header-menu">
             <a href="#inicio" class="menu-options logo">CAR<span class="logo-color">BOOK</span></h1>
             <div class="header-right">
-                <a href="#inicio" class="menu-options ativo" >Inicio</a>
-                <a href="#services" class="menu-options">Serviços</a>
-                <a href="#prices" class="menu-options">Preços</a>
-                <a href="#cars" class="menu-options">Carros</a>
-                <a href="#contact" class="menu-options">Contato</a>
+                <a href="./index.html" class="menu-options ativo" >Inicio</a>
+                <a href="./car-list.html" class="menu-options">Carros</a>
                 <a href="#staff" class="menu-options">Login</a>
+                <a href="./new-car.html">
+                    <button class="new_car_button">Novo Carro</button>
+                </a>
             </div>
         </div>
 
@@ -36,24 +37,84 @@
                     <div class="date-left">
                         <label class="label">Data Retirada</label>
                         <br>
-                        <input type="date" class="form-input">
+                        <input type="date" class="date-input">
                     </div>
                     <div class="date-right">
                         <label class="label">Data Devolução</label>
                         <br>
-                        <input type="date" class="form-input">
+                        <input type="date" class="date-input">
                     </div>
                 </div>
                 
                 <label class="label">Horario Retirada</label>
                 <input type="time" class="form-input">
-                <button class="btn-alugar">Alugar</button>
-                
+                <a href="./car-list.html">
+                    <button class="btn-alugar">Alugar</button>
+                </a>
             </div>
         </div>
     </div>
     
 
+    <div class="info-container">
+        <h1>Grande variedades de carros</h1>
+    </div>
+
+
+    <div class="cars-container">
+        <div class="car-content">
+            <div class="image-car">
+                <img src="./img/kwid e-tech.webp" class="car-img">
+            </div>
+            <h2>Kwid E-Tech</h2>
+            <span>Eletrico</span>
+            <br>
+            <span>R$400,00 <span class="diary-price">Diaria</span></span>
+            <div class="rent-car">
+                <h3>Alugar</h3>
+            </div>
+        </div>
+        <div class="car-content">
+            <div class="image-car">
+                <img src="./img/honda-civic.jpg">
+            </div>
+            <h2>Honda Civic</h2>
+            <span>Flex Executivo</span>
+            <br>
+            <span>R$250,00 <span class="diary-price">Diaria</span></span>
+            <div class="rent-car">
+                <h3>Alugar</h3>
+            </div>
+        </div>
+        <div class="car-content">
+            <div class="image-car">
+                <img src="./img/honda-civic.jpg">
+            </div>
+            <h2>Honda Civic</h2>
+            <span>Flex Executivo</span>
+            <br>
+            <span>R$250,00 <span class="diary-price">Diaria</span></span>
+            <div class="rent-car">
+                <h3>Alugar</h3>
+            </div>
+        </div>
+        <div class="car-content">
+            <div class="image-car">
+                <img src="./img/honda-civic.jpg">
+            </div>
+            <h2>Honda Civic</h2>
+            <span>Flex Executivo</span>
+            <br>
+            <span>R$250,00 <span class="diary-price">Diaria</span></span>
+            <a>
+                <div class="rent-car">
+                    <h3>Alugar</h3>
+                </div>
+            </a>
+           
+        </div>
+        
+    </div>
    
 </body>
 </html>

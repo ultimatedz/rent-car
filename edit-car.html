@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Veiculo - CarBook</title>
+    <link rel="stylesheet" href="./styles/new-car.css">
+    <script src="./scripts/index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="register-container">
+            <h2>Editar Veiculo</h2>
+            <label class="label">Marca</label>
+            <select name="marca" id="selectEditMarca">
+                <option value="Peugeot">Peugeot</option>
+                <option value="Honda">Honda</option>
+                <option value="Fiat">Fiat</option>
+                <option value="GM">GM</option>
+                <option value="Renault">Renault</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedes">Mercedes-Benz</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Citroen">Citroen</option>
+            </select>
+            <label class="label">Modelo</label>
+            <input type="text" class="form-input" id="inputEditModelo" placeholder="Modelo Carro" >
+            <label class="label">Ano</label>
+            <input type="number"class="form-input" id="inputEditAno"placeholder="Ano Fabricação" >
+            <label class="label">Observações</label>
+            <input type="text" class="form-input" id="inputEditObs" placeholder="Avarias e etc">
+            <label class="label">Diaria</label>
+            <input type="number" class="form-input" id="inputEditPrice" placeholder="Preço Diaria" >
+            <label class="label">Status</label>
+            <select name="status" id="inputEditStatus">
+                <option value="alugado">Alugado</option>
+                <option value="repair">Manutenção</option>
+                <option value="livre">Livre</option>
+            </select>
+            <label class="label">Categoria</label>
+            <select name="categoria" id="inputEditCategoria">
+                <option value="Compacto">Compacto</option>"
+                <option value="Economico">Economico</option>
+                <option value="Eletrico">Eletrico</option>
+                <option value="Intermediario">Intermediario</option>
+                <option value="SUV">SUV</option>
+                <option value="Executivo">Executivo</option>
+                <option value="Blindado">Blindado</option>
+            </select>
+            
+            <a href="car-list.html">            
+                <button class="add-new-car" onclick="callUpdateCar()">Atualizar Veiculo</button>
+            </a>
+
+            <a href="car-list.html">
+                 <button class="cancel" type="button">Cancelar</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
