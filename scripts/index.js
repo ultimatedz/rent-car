@@ -9,7 +9,6 @@ function addCar() {
   const inputDiariaElement = document.querySelector("#inputPrice");
   const inputStatusElement=document.querySelector("#inputStatus");
   const inputCategoriaElement=document.querySelector("#inputCategoria");
-  console.log("addCar entrou");
   fetch("http://127.0.0.1:5000/cars", {
     method: 'POST',
     headers: {
@@ -174,9 +173,13 @@ function updateCar(id) {
       
       }
     )
+    
   }).then(res => res.json().then(res => {
     updateList(res)
   }))
+  setTimeout(()=>{
+    window.location.href="./car-list.html"
+  },500)
 }
 
 function callUpdateCar(){
