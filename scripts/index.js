@@ -1,7 +1,5 @@
 
-
-fetch("http://127.0.0.1:5000/cars").then(res => res.json().then(res => {
-}))
+var categoria = 1;
 
 function addCar() {
   const inputMarcaElement = document.querySelector('#selectMarca');
@@ -35,11 +33,23 @@ function addCar() {
 
 
 
+function filterList(){
+  categoria = document.querySelector("#selectCategoria").value;
+  console.log(categoria);
+  fetch("http://127.0.0.1:5000/cars").then(res => res.json().then(res => {
+    updateList(res)
+  }))
+}
+
+
+
 function updateList(res){
 
   if(document.querySelector("#cars_container")== null){
     return
   }
+
+  if (categoria==1){
   document.querySelector("#cars_container").innerHTML = ''
   res.forEach(element =>{
     document.querySelector("#cars_container").innerHTML +=`
@@ -78,7 +88,52 @@ function updateList(res){
                       <span class="alugar_btn">Reserve Agora</span>
                     </div>
       `
+      
+      
+      
+  })}else{
+
+  document.querySelector("#cars_container").innerHTML = ''
+  res.forEach(element =>{
+    if(`${element.categoria}`==categoria)
+    document.querySelector("#cars_container").innerHTML +=`
+    <div class="car-content">
+                <div class="category_title">
+                <span >Categoria: ${element.categoria}</span>
+                </div>
+                    <div class="img-car-container">
+                        <img class="img-car-content" src="./img/${element.categoria}.png">
+                    </div>
+                    <div class="info-car">
+                        <h3>${element.marca} ${element.modelo}</h3>
+                        <span class="span_placeholder">Veiculo similar a: ${element.marca} ${element.modelo}, dentre outros</span>
+                        <br>
+                        <span>Ano: ${element.ano}</span>
+                        <br>
+                        <span>Estado: ${element.obs}</span>
+                        <br>
+
+                        <span>Diaria: R$${element.price}</span>
+                    </div>
+                    <div class="icon-div">
+                    <a href="edit-car.html">
+                      <button onclick="saveLocalStorageId(${element.id})" class="button-icons">
+                        <img src="./icon/edit-icon.png">
+                      </button>    
+                    </a>
+                            
+                      <button onclick="deleteCar(${element.id})" class="button-icons">
+                        <img src="./icon/trash-icon.png">
+                       </button>       
+                            
+                    </div>
+
+                    <div class="button_alugar">
+                      <span class="alugar_btn">Reserve Agora</span>
+                    </div>
+      `
   })
+  }
 
 }
 

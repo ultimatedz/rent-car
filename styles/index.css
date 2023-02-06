@@ -190,8 +190,11 @@ input::placeholder{
 .car-content:hover{
     transform: scale(1.05);
     transition: all 1s;
-
 }
+.car-content a{
+    text-decoration: none;
+}
+
 .diary-price{
     color: gray;
 }
