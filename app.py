@@ -17,6 +17,7 @@ class Car(db.Model):
     obs = db.Column(db.String, nullable=True)
     price = db.Column(db.Integer, nullable=False)
     status = db.Column(db.String, nullable=False)
+    categoria = db.Column(db.Integer, nullable=False)
 
     def as_dict(self):
         return {c.name: getattr(self,c.name) for c in self.__table__.columns}
@@ -37,12 +38,13 @@ def addNewCar():
   data = request.get_json()
 
   carro = Car(
-      modelo=data["modelo"],
       marca=data["marca"],
+      modelo=data["modelo"],
       ano=data["ano"],
       obs=data["obs"],
       price=data["price"],
       status=data["status"],
+      categoria=data["categoria"],
   )
   db.session.add(carro)
   db.session.commit()
@@ -53,7 +55,7 @@ def addNewCar():
 @app.route("/cars/<int:id>", methods=['DELETE'])
 def deleteCar(id):
 
-  carro = db.get_or_404(Contacts, id)
+  carro = db.get_or_404(Car, id)
 
   db.session.delete(carro)
   db.session.commit()
@@ -75,9 +77,10 @@ def updateCar(id):
   carro.obs=data['obs']
   carro.price=data['price']
   carro.status=data['status']
+  carro.categoria=data['categoria']
 
   carro.verified = True
   db.session.commit()
 
-  contacts = db.session.execute(db.select(Contacts).order_by(Contacts.id)).scalars()
-  return jsonify([contact.as_dict() for contact in contacts])
+  cars = db.session.execute(db.select(Car).order_by(Car.id)).scalars()
+  return jsonify([car.as_dict() for car in cars])
