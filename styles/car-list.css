@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    background-color: rgb(149, 149, 255);
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.containers{
+    padding: 1rem;
+    margin-top: 3rem;
+    width: 700px;
+    background-color: rgba(blue, blue, blue, 1);
+}
+
+.title-container{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.car-container{
+    display: flex;
+    margin-top: 5rem;
+    width: 100%;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+.car-content{
+    width: 300px;
+    margin-top: 1rem;
+    text-align: center;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 1s;
+    box-shadow: 1px 1px 25px black;
+    
+}
+
+.car-content:hover{
+    transform: scale(1.1);
+}
+
+.img-car-content{
+    width: 300px;
+}
+.icon-div{
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: space-between;
+}
+.icon-div img{
+    width: 35px;
+}
+
+.button-icons{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.button_new_car{
+    padding: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(15, 179, 15);
+    color: white;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.button_new_car:hover{
+    background-color: rgb(9, 136, 9);;
+}
+
+.title_carlist{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+
+.header-menu{
+    width: 100%;
+    height: 50px;
+    padding-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+.header-menu a.logo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo-color{
+    color: rgb(0, 0, 255);
+}
+
+.menu-options{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 25px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.menu-options:hover{
+    color: rgb(0, 0, 255);
+}
+
+.ativo{
+    color :rgb(0, 0, 255)
+}
+
+
+
+.header-right{
+    float: right;
+}
+
+@media screen and (max-width: 870px) {
+    .header-menu a {
+      float: none;
+      display: block;
+      text-align: left;
+      background-color: rgb(149, 149, 255);
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+  @media screen and (max-width: 1250px) {
+    .container-dates{
+        flex-direction: column;
+    }
+
+    .date-left{
+        width: 100%;
+    }
+    .date-right{
+        width: 100%;
+    }
+  }
+
+.category_title{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.span_placeholder{
+    font-size: 12px;
+    color: rgb(177, 177, 177);
+}

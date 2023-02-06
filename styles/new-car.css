@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap');
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+*{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.main{
+    background-image: url(../img/car-background.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.register-container{
+    background-color: rgb(149, 149, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 10px;
+}
+
+.register-container input,select {
+    margin: 2px;
+    border-radius: 5px;
+    border-style: none;
+    padding: 5px;
+}
+
+.register-container input:focus{
+    outline: none;
+}
+
+.register-container button{
+    padding: 0.5rem;
+    border-radius: 15px;
+    border-style: none;
+}
+
+
+.add-new-car{
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 15px;
+    border-style: none;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    background-color: rgb(15, 179, 15);
+    color: white;
+    padding: 1rem;
+    transition: all 1s;
+}
+
+.add-new-car:hover{
+    background-color: green;
+}
+
+
+.cancel{
+    width: 100%;
+}
