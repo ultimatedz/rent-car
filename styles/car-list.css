@@ -18,11 +18,14 @@ body{
 }
 
 .containers{
-    padding: 1rem;
+    padding: 2rem;
     margin-top: 3rem;
-    width: 700px;
-    background-color: rgba(blue, blue, blue, 1);
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.4);
 }
+
+
+
 
 .title-container{
     text-align: center;
@@ -41,7 +44,7 @@ body{
     width: 300px;
     margin-top: 1rem;
     text-align: center;
-    height: 400px;
+    height: 470px;
     background-color: rgba(255, 255, 255, 0.7);
     transition: all 1s;
     box-shadow: 1px 1px 25px black;
@@ -49,7 +52,7 @@ body{
 }
 
 .car-content:hover{
-    transform: scale(1.1);
+    transform: scale(1.05   );
 }
 
 .img-car-content{
@@ -99,7 +102,7 @@ body{
 
 
 .header-menu{
-    width: 100%;
+    padding: 2rem 7rem;
     height: 50px;
     padding-bottom: 1rem;
     background-color: rgba(255, 255, 255, 0.2);
@@ -146,25 +149,18 @@ body{
       float: none;
       display: block;
       text-align: left;
-      background-color: rgb(149, 149, 255);
     }
     .header-right {
       float: none;
-    }
-  }
-
-  @media screen and (max-width: 1250px) {
-    .container-dates{
-        flex-direction: column;
+        color: black;
     }
 
-    .date-left{
-        width: 100%;
+    .title{
+        opacity: 0;
     }
-    .date-right{
-        width: 100%;
-    }
+
   }
+
 
 .category_title{
     padding-bottom: 1rem;
@@ -174,4 +170,19 @@ body{
 .span_placeholder{
     font-size: 12px;
     color: rgb(177, 177, 177);
+}
+
+
+.alugar_btn{
+    cursor: pointer;
+    background-color: rgb(149, 149, 255);
+    border-radius: 5px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    transition: all 1s;
+}
+.alugar_btn:hover{
+    background-color: rgb(177, 177, 255);
 }

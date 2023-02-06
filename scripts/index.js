@@ -73,6 +73,10 @@ function updateList(res){
                        </button>       
                             
                     </div>
+
+                    <div class="button_alugar">
+                      <span class="alugar_btn">Reserve Agora</span>
+                    </div>
       `
   })
 
